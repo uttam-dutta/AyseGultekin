@@ -3,6 +3,10 @@ body{
 }
 img{
 	border-radius: 16px;
+	width: auto;
+  	height: auto;
+  	max-width: 40%;
+  	max-height: 40%;
 }
 #typeDiv {
 	position: absolute;
