@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta charset="UTF-8">
+	<title>First anniversary of love</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@500&family=Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/format.css">
+</head>
+
+<body style="margin:0px">
+	<audio autoplay loop>
+		<source src="music/music.mp3" type="audio/mp3">
+		Your browser does not support the audio.
+	</audio>
+	<canvas></canvas>
+	<div id="imgTxt">
+		<span id="Txt"></span> <br />
+		<span id="tmp"></span>
+		<img id="img" src="">
+	</div>
+	<div id="heartTxt">
+		<span id="clickMe">Tıklamak!</span>
+		<div id="heart">
+			<button id="button" onclick="play(); playSound();" ontouchstart="play(); playSound();"></button>
+		</div>
+	</div>
+	<div id="content">
+		<h1 id="together">birlikte olduk</h2>
+		<div id="timer">
+			<b id="d"></b> günler
+			<b id="h"></b> Saatler
+			<b id="m"></b> dakika
+			<b id="s"></b> saniye
+		</div>
+	</div>
+
+	<div id="typeDiv">
+		<span id="txt1"></span> <br />
+		<span id="txt2"></span>
+	</div>
+	<script>
+		var ok = 0;
+		var flag = 1;
+		var myImage = document.getElementById("img");
+		var myTxt = document.getElementById("Txt");
+		var imageArray = ["pic/pic1.jpeg", "pic/pic2.jpeg", "pic/pic3.jpeg", "pic/pic4.jpeg", "pic/pic5.jpeg", "pic/pic6.jpeg",
+			"pic/pic7.jpeg", "pic/pic8.jpeg", "pic/pic9.jpeg", "pic/pic10.jpeg", "pic/pic11.jpeg", "pic/pic12.jpeg", "pic/pic13.jpeg",
+			"pic/pic14.jpeg", "pic/pic15.jpeg"
+		];
+		var imageIndex = 0;
+		var txtArray = ["Merhaba Ayşem", "İlk tanıştığımızda hayat arkadaşın olmak istedim", "Seni o kadar çok sevdim ki anlatamam♡",
+			"Hayatımda ilk defa bir melek belirdi", "Ay ışığı bu gece çok güzel ayım", "Seninle hep yan yana yürümek istiyorum",
+			"Bazen sinirlenmeni seviyorum", "Sen gördüğüm en tatlı kızsın", "Ben seni buldum sen beni buldun", "Seni seviyorum seni çok seviyorum Ayşem",
+			"Aile kuracağız seninle evleneceğim.", "Ayçiçeği sensin. ve kaktüs seni çok seviyor", "Rüyalarımda her yerde seni görüyorum kalbimde her yerde.",
+			"Ayşe Gültekin, seni seviyorum", "Maymunundan küçük bir hediye🐵❤🌻"
+		];
+		var len = imageArray.length;
+		var t = 0;
+	</script>
+
+	<script type="text/javascript" src="./js/stars.js"></script>
+	<script type="text/javascript" src="./js/typeWriter.js"></script>
+	<script type="text/javascript" src="./js/date.js"></script>
+	<script type="text/javascript" src="./js/playImg.js"></script>
+</body>
+
+</html>
