@@ -3,6 +3,9 @@ body{
 }
 img{
 	border-radius: 16px;
+	height:auto;
+	max-width:85%;
+	object-fit: contain;
 }
 #typeDiv {
 	position: absolute;
